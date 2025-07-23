@@ -15,7 +15,8 @@ features = ['rayon']
 
 [dependencies]
 rayon = { version = "1.0.3", optional = true }
+serde = { version = "1.0.219", optional = true }
 
 [features]
-default = ["std"]
+default = ["std", "serde"]
 std = []

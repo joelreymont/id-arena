@@ -128,6 +128,9 @@ mod rayon;
 #[cfg(feature = "rayon")]
 pub use crate::rayon::*;
 
+#[cfg(feature = "serde")]
+mod serde_impl;
+
 /// A trait representing the implementation behavior of an arena and how
 /// identifiers are represented.
 ///
